@@ -1,0 +1,18 @@
+Client/istemci bir istekte(request) bulundugunda , Container unique/essiz bir Session ID olusturur ve 
+bu Session ID bilgisini cevaba(response) ekler. Daha sonrasinda istemci sonrasindaki isteklerde(request) bu 
+Session ID bilgisini de gonderir.
+
+Peki istemci/sunucu arasinda session id bilgisi nasil tasinmaktadir ?
+Cookie uzerinden bu bilgi tasinir !
+
+HttpSession objesini olusturma
+Unique Session ID olusturma
+Cookie objesi olusturma
+Session ID ile Cookie objesini iliskilendirme
+Cookie’yi , cevaba(response) ekleme gorevlerinden Servlet Container sorumludur.
+
+Kisacasi Servlet Container, tum session ve cookie gorevlerini yapmaktadir !
+Session ID olusturma mantigi su sekildedir;
+
+eger istek/request Session Id , Cookie bilgisine sahipse ilgili eslesen session’i bul ve session id ile iliskilendir.
+eger istek/request Session Id  ,Cookie bilgisine sahip degilse yeni bir session olustur.Tum bunlar arka planda calisir.
