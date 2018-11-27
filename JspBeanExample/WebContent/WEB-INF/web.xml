@@ -19,4 +19,14 @@
   	<servlet-name>UseBeanServlet</servlet-name>
   	<url-pattern>/usebeanservlet</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>UseBeanProperty</servlet-name>
+  	<servlet-class>useBean.requestImplicit.UseBeanProperty</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UseBeanProperty</servlet-name>
+  	<url-pattern>/usebeanproperty</url-pattern>
+  </servlet-mapping>
 </web-app>
